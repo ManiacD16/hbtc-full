@@ -28,7 +28,7 @@ function App() {
           } />
 
           {/* User Panel Routes */}
-          <Route path="/user/" element={<MainContent />} />
+          <Route path="/user" element={<MainContent />} />
             <Route path="/team" element={<Team />} />
             <Route path="/activity" element={<Activity />} />
             {/* Redirect to team by default, if /user is accessed */}
@@ -36,7 +36,7 @@ function App() {
           
 
           {/* Redirect any unknown paths to home */}
-          <Route path="*" element={<Navigate to="/" />} />
+          {/* <Route path="*" element={<Navigate to="/" />} /> */}
         </Routes>
       </div>
     </Router>
