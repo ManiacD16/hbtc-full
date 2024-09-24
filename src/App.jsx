@@ -16,27 +16,32 @@ function App() {
       <div className="min-h-screen">
         {/* Routes for main sections */}
         <Routes>
-          <Route path="/" element={
-            <>
-              <div id="home"><Home /></div>
-              <div id="about"><About /></div>
-              <div id="features"><Features /></div>
-              <div id="tokenomics"><Tokenomics /></div>
-              <div id="airdrop"><Airdrop /></div>
-              <div id="roadmap"><Roadmap /></div>
-            </>
-          } />
+          <Route 
+            path="/" 
+            element={
+              <>
+                <div id="home"><Home /></div>
+                <div id="about"><About /></div>
+                <div id="features"><Features /></div>
+                <div id="tokenomics"><Tokenomics /></div>
+                <div id="airdrop"><Airdrop /></div>
+                <div id="roadmap"><Roadmap /></div>
+              </>
+            } 
+          />
 
           {/* User Panel Routes */}
-          <Route path="/user" element={<MainContent />} />
-            <Route path="/team" element={<Team />} />
-            <Route path="/activity" element={<Activity />} />
+          <Route path="/user/*" element={<MainContent />} /> {/* Allow nested routes */}
+            <Route path="team" element={<Team />} />
+            <Route path="activity" element={<Activity />} />
             {/* Redirect to team by default, if /user is accessed */}
-            {/* <Route path="" element={<Navigate to="team" />} /> */}
-          
+            <Route path="" element={<Navigate to="team" />} />
 
+          {/* Redirect any unknown paths under /user to team */}
+          <Route path="/user/*" element={<Navigate to="team" />} />
+          
           {/* Redirect any unknown paths to home */}
-          {/* <Route path="*" element={<Navigate to="/" />} /> */}
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </div>
     </Router>
