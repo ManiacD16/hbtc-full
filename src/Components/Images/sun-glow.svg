@@ -1,0 +1,70 @@
+<svg id="sun-glow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="692.311" viewBox="0 0 1440 692.311">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_2" data-name="Rectangle 2" width="1440" height="692.311" fill="none"/>
+    </clipPath>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.499" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0" stop-color="#f8f8f8"/>
+      <stop offset="0.239" stop-color="#f8f8f8" stop-opacity="0.988"/>
+      <stop offset="0.377" stop-color="#f8f8f8" stop-opacity="0.957"/>
+      <stop offset="0.49" stop-color="#f8f8f8" stop-opacity="0.902"/>
+      <stop offset="0.588" stop-color="#f8f8f8" stop-opacity="0.82"/>
+      <stop offset="0.677" stop-color="#f8f8f8" stop-opacity="0.718"/>
+      <stop offset="0.76" stop-color="#f8f8f8" stop-opacity="0.588"/>
+      <stop offset="0.838" stop-color="#f8f8f8" stop-opacity="0.435"/>
+      <stop offset="0.911" stop-color="#f8f8f8" stop-opacity="0.259"/>
+      <stop offset="0.979" stop-color="#f8f8f8" stop-opacity="0.067"/>
+      <stop offset="1" stop-color="#f8f8f8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="linear-gradient" x1="0.547" y1="1.141" x2="0.49" y2="0.361" gradientUnits="objectBoundingBox">
+      <stop offset="0.005" stop-color="#fff"/>
+      <stop offset="0.242" stop-color="#fefefe" stop-opacity="0.992"/>
+      <stop offset="0.378" stop-color="#fefefe" stop-opacity="0.957"/>
+      <stop offset="0.488" stop-color="#fefefe" stop-opacity="0.902"/>
+      <stop offset="0.585" stop-color="#fdfdfd" stop-opacity="0.824"/>
+      <stop offset="0.673" stop-color="#fdfdfd" stop-opacity="0.725"/>
+      <stop offset="0.755" stop-color="#fcfcfc" stop-opacity="0.6"/>
+      <stop offset="0.831" stop-color="#fbfbfb" stop-opacity="0.451"/>
+      <stop offset="0.904" stop-color="#f9f9f9" stop-opacity="0.278"/>
+      <stop offset="0.971" stop-color="#f8f8f8" stop-opacity="0.09"/>
+      <stop offset="1" stop-color="#f8f8f8" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="radial-gradient-2" cx="0.966" cy="0.23" r="0.432" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0" stop-color="#f8f89a"/>
+      <stop offset="0.239" stop-color="#f8f89a" stop-opacity="0.988"/>
+      <stop offset="0.377" stop-color="#f8f89e" stop-opacity="0.957"/>
+      <stop offset="0.49" stop-color="#f8f8a3" stop-opacity="0.902"/>
+      <stop offset="0.588" stop-color="#f8f8aa" stop-opacity="0.82"/>
+      <stop offset="0.677" stop-color="#f8f8b4" stop-opacity="0.718"/>
+      <stop offset="0.76" stop-color="#f8f8c0" stop-opacity="0.588"/>
+      <stop offset="0.838" stop-color="#f8f8cf" stop-opacity="0.435"/>
+      <stop offset="0.911" stop-color="#f8f8df" stop-opacity="0.259"/>
+      <stop offset="0.979" stop-color="#f8f8f1" stop-opacity="0.067"/>
+      <stop offset="1" stop-color="#f8f8f8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-3" cx="1.045" cy="0.554" r="0.573" xlink:href="#radial-gradient-2"/>
+    <radialGradient id="radial-gradient-4" cx="0.489" cy="0.553" r="0.881" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0" stop-color="#f8f89a"/>
+      <stop offset="0.087" stop-color="#f8f89d" stop-opacity="0.969"/>
+      <stop offset="0.224" stop-color="#f8f8a5" stop-opacity="0.875"/>
+      <stop offset="0.395" stop-color="#f8f8b3" stop-opacity="0.725"/>
+      <stop offset="0.591" stop-color="#f8f8c7" stop-opacity="0.518"/>
+      <stop offset="0.807" stop-color="#f8f8df" stop-opacity="0.259"/>
+      <stop offset="1" stop-color="#f8f8f8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g id="Group_3" data-name="Group 3" clip-path="url(#clip-path)">
+    <g id="Group_2" data-name="Group 2" transform="translate(167.69 -47.085)">
+      <path id="Path_1" data-name="Path 1" d="M734.547,9.316,643.78,1078.667h87.933L640.945,9.316ZM133.845,603.61l1069.35-90.768v87.931L133.845,510Zm128.311-404.6,820.329,691.963L1020.3,953.152,328.345,132.826Zm79.01,770.563,691.956-820.328,62.178,62.175L274.975,903.387Zm98.569-907.26L917.09,1023.5l-81.781,32.309L526.791,27.921Zm-251.291,744.1,961.189-477.353,32.311,81.78L154.049,719.359Zm-27.49-424.174,1017.2,342.125-34.979,80.669L198.194,296.361Zm350.622,701.351L869.979,18.7,953.521,66.7,425.693,1046.36Z" transform="translate(-116.21 50.67)" opacity="0.5" fill="url(#radial-gradient)" style="mix-blend-mode: screen;isolation: isolate"/>
+      <g id="Group_1" data-name="Group 1">
+        <circle id="Ellipse_1" data-name="Ellipse 1" cx="390.542" cy="390.542" r="390.542" transform="translate(0 552.31) rotate(-45)" fill="url(#linear-gradient)" style="mix-blend-mode: screen;isolation: isolate"/>
+        <circle id="Ellipse_2" data-name="Ellipse 2" cx="390.542" cy="390.542" r="390.542" transform="translate(0 528.31) rotate(-45)" opacity="0.3" fill="url(#radial-gradient-2)" style="mix-blend-mode: screen;isolation: isolate"/>
+        <circle id="Ellipse_3" data-name="Ellipse 3" cx="256.237" cy="256.237" r="256.237" transform="translate(268.794 753.996) rotate(-83.521)" opacity="0.5" fill="url(#radial-gradient-3)" style="mix-blend-mode: screen;isolation: isolate"/>
+        <circle id="Ellipse_4" data-name="Ellipse 4" cx="161.719" cy="161.719" r="161.719" transform="translate(390.31 366.591)" fill="url(#radial-gradient-4)" style="mix-blend-mode: screen;isolation: isolate"/>
+      </g>
+    </g>
+  </g>
+</svg>
