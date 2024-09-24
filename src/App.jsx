@@ -23,7 +23,7 @@ function App() {
           <Route path="/roadmap" element={<Roadmap />} />
           
           {/* User Panel Routes */}
-          <Route path="/user" element={<MainContent />} />
+          <Route path="/user/*" element={<MainContent />} />
           <Route path="/user/team" element={<Team />} />
           <Route path="/user/activity" element={<Activity />} />
           
