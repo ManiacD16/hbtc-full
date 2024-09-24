@@ -5,7 +5,7 @@ import Features from "./Components/Features";
 import Tokenomics from "./Components/Tokenomics";
 import Airdrop from "./Components/Airdrop";
 import Roadmap from "./Components/Roadmap";
-import MainContent from "./Components/MainContent"; // Import UserPanel components directly
+import MainContent from "./Components/MainContent"; 
 import Team from "./Components/Team";
 import Activity from "./Components/Activity";
 
@@ -14,7 +14,6 @@ function App() {
     <Router>
       <div className="min-h-screen">
         <Routes>
-          {/* Landing Page Routes */}
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/features" element={<Features />} />
@@ -22,12 +21,11 @@ function App() {
           <Route path="/airdrop" element={<Airdrop />} />
           <Route path="/roadmap" element={<Roadmap />} />
           
-          {/* User Panel Routes */}
-          <Route path="/user/*" element={<MainContent />} />
-          <Route path="/user/team" element={<Team />} />
-          <Route path="/user/activity" element={<Activity />} />
+          {/* Main Content with Nested Routes */}
+          <Route path="/user" element={<MainContent />} />
+            <Route path="/team" element={<Team />} />
+            <Route path="/activity" element={<Activity />} />
           
-          {/* Fallback Route */}
           <Route path="*" element={<div>Page Not Found</div>} />
         </Routes>
       </div>

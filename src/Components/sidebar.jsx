@@ -116,7 +116,7 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
           {/* Dashboards Menu */}
           <div
             className="flex items-center justify-between p-3 hover:bg-gray-700 rounded-lg cursor-pointer"
-            onClick={() => navigate("/")}
+            onClick={() => navigate("/user")}
           >
             <div className="flex items-center space-x-3">
               <Home className="h-5 w-5 text-gray-500 dark:text-slate-300" />
@@ -132,7 +132,7 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
               className="flex items-center p-3 hover:bg-gray-700 rounded-lg cursor-pointer"
               onClick={() => {
                 toggleTeamDropdown(); // Call your dropdown toggle function
-                navigate("/user/team"); // Navigate to team.js
+                navigate("/team"); // Navigate to team.js
               }}
             >
               <UsersIcon className="h-5 w-5 text-gray-500 dark:text-slate-300" />
@@ -171,7 +171,7 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
               className="flex items-center p-3 hover:bg-gray-700 rounded-lg cursor-pointer"
               onClick={() => {
                 toggleActivityDropdown(); // Call your dropdown toggle function
-                navigate("/user/activity"); // Navigate to team.js
+                navigate("/activity"); // Navigate to team.js
               }}
             >
               <ChartBarIcon className="h-5 w-5 text-gray-500 dark:text-slate-300" />

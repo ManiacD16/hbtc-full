@@ -16,12 +16,14 @@ import {
   DollarSign,
 } from "lucide-react"; // Import Menu icon
 import useClickOutside from "./useClickOutside"; // Import the custom hook
+import { useNavigate } from "react-router-dom";
 
 const Header = ({ isSidebarOpen, setIsSidebarOpen }) => {
   const [isSearchActive, setIsSearchActive] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "system");
-
+  const navigate = useNavigate();
+  
   const searchRef = useRef(null);
   const dropdownRef = useRef(null);
 
@@ -29,6 +31,7 @@ const Header = ({ isSidebarOpen, setIsSidebarOpen }) => {
     setIsDropdownOpen(!isDropdownOpen);
   };
 
+  
   const applyTheme = (selectedTheme) => {
     setTheme(selectedTheme);
     localStorage.setItem("theme", selectedTheme);
@@ -137,7 +140,9 @@ const Header = ({ isSidebarOpen, setIsSidebarOpen }) => {
             /> */}
 
           {/* </div> */}
-          <Home className="h-5 w-5 text-gray-500 cursor-pointer" />
+          <Home className="h-5 w-5 text-gray-500 cursor-pointer"
+            onClick={() => navigate("/")}
+          />
           {/* Uncomment and adjust the dropdown as needed */}
           <div ref={dropdownRef} className="relative">
             <div onClick={toggleDropdown}>{renderThemeIcon()}</div>
