@@ -16,10 +16,12 @@ import {
 import Sidebar from "./sidebar";
 import Header from "./header";
 import Banner from "./Images/Banner.jpg";
+import "../App.css";
 
 const EcommerceReferralPage = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [amount, setAmount] = useState("");
+  const [isActive, setIsActive] = useState(false);
 
   const [adContentType, setAdContentType] = useState("image"); // "image" or "video"
   const adContent = {
@@ -215,9 +217,18 @@ const EcommerceReferralPage = () => {
             </div>
 
             {/* Render Reward Panel Cards */}
-            <div className="flex items-stretch">
+            <div className={`flex items-stretch`}>
               <div className="w-full bg-white dark:bg-gray-800 shadow-lg flex flex-col rounded-lg">
                 {renderRewardPanel("5% Weekly Global Business", "$10000", "20")}
+                <div className="flex justify-end">
+                  <button
+                    className="bg-green-600 text-white py-1 px-4 rounded-2xl w-1/3 hover:bg-green-400 mr-2 mb-2 text-sm sm:text-base md:text-md"
+                    onClick={() => handleWithdraw()}
+                  >
+                    Eligible
+                  </button>
+                </div>
+
                 {/* <div className="flex justify-end">
                   <button
                     className="bg-green-500 text-white py-1 px-4 border-black border-2 rounded-2xl w-1/3 hover:bg-green-600 mr-2 mb-2"
@@ -235,6 +246,14 @@ const EcommerceReferralPage = () => {
                   "$10000",
                   "20"
                 )}
+                <div className="flex justify-end">
+                  <button
+                    className="bg-red-600 text-white py-1 px-4 rounded-2xl w-1/3 hover:bg-red-900 mr-2 mb-2 text-sm sm:text-base md:text-md"
+                    onClick={() => handleWithdraw()}
+                  >
+                    Ineligible
+                  </button>
+                </div>
                 {/* <div className="flex justify-end">
                   <button
                     className="bg-green-500 text-white py-1 px-4 border-black border-2 rounded-2xl w-1/3 hover:bg-green-600 mr-2"
@@ -314,7 +333,9 @@ const renderRewardPanel = (title, value, achievers) => {
           <p className="text-md text-gray-500 font-bold">{value}</p>
         </div>
         <div className="text-right">
-          <p className="text-[11px] text-gray-900 font-bold">Achievers</p>
+          <p className="text-[11px] text-gray-900 dark:text-gray-200 font-bold">
+            Achievers
+          </p>
           <p className="text-md text-gray-500 font-semibold">{achievers}</p>
         </div>
       </div>

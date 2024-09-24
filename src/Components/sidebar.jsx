@@ -168,22 +168,22 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
           {/* Activity Dropdown */}
           <div>
             <div
-              className="flex items-center p-3 hover:bg-gray-700 rounded-lg cursor-pointer"
-              onClick={() => {
-                toggleActivityDropdown(); // Call your dropdown toggle function
-                navigate("/activity"); // Navigate to team.js
-              }}
-            >
-              <ChartBarIcon className="h-5 w-5 text-gray-500 dark:text-slate-300" />
-              <span className="ml-3 text-gray-500 dark:text-slate-300 hover:text-gray-200 flex-grow">
-                Activity
-              </span>
-              <ChevronDown
-                className={`h-5 w-5 dark:text-gray-200 text-gray-500 transition-transform duration-300 ease-in-out transform ${
-                  isActivityDropdownOpen ? "rotate-0" : "-rotate-90"
-                }`}
-              />
-            </div>
+      className="flex items-center p-3 hover:bg-gray-700 rounded-lg cursor-pointer"
+      onClick={() => {
+        toggleActivityDropdown(); // Call your dropdown toggle function
+        navigate("/activity"); // Navigate to activity
+      }}
+    >
+      <ChartBarIcon className="h-5 w-5 text-gray-500 dark:text-slate-300" />
+      <span className="ml-3 text-gray-500 dark:text-slate-300 hover:text-gray-200 flex-grow">
+        Activity
+      </span>
+      <ChevronDown
+        className={`h-5 w-5 dark:text-gray-200 text-gray-500 transition-transform duration-300 ease-in-out transform ${
+          isActivityDropdownOpen ? "rotate-0" : "-rotate-90"
+        }`}
+      />
+    </div>
             <div
               className={`overflow-hidden transition-all duration-300 ease-in-out ${
                 isActivityDropdownOpen
