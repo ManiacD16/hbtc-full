@@ -3,10 +3,12 @@ import Logo from "../Components/Images/Logo.svg";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
 import Background from "./Background";
+import { useNavigate } from "react-router-dom";
 // import { useAppKit } from "@reown/appkit/react";
 
 const HBTCLandingPage = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
+    const navigate = useNavigate();
   // const { open } = useAppKit();
 
   const toggleNav = () => setIsNavOpen(!isNavOpen);
