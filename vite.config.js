@@ -7,7 +7,7 @@ export default defineConfig({
   build: {
     rollupOptions:   
  {
-      external: ['ethers5', '@coinbase/wallet-sdk'],
+      external: ['ethers5'],
     },
   },
 });
