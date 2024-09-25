@@ -5,8 +5,45 @@ import { IoMdClose } from "react-icons/io";
 import Background from "./Background";
 import { useNavigate } from "react-router-dom";
 // import { useAppKit } from "@reown/appkit/react";
+import { EthersAdapter } from '@reown/appkit-adapter-ethers';
+import {sepolia, polygon } from '@reown/appkit/networks'
+
+import {
+  createAppKit,
+  useAppKit,
+  useAppKitEvents,
+  useAppKitState,
+  useAppKitTheme
+} from '@reown/appkit/react'
+const networks = [polygon,sepolia];
+const projectId = 'c9d5453b4106a254546fc80b8e9850bd';
+if (!projectId) {
+  throw new Error('VITE_PROJECT_ID is not set')
+}
+const ethersAdapter = new EthersAdapter();
+createAppKit({
+  adapters: [ethersAdapter],
+  networks,
+  projectId,
+  features: {
+    analytics: true
+  },
+  themeMode: 'light',
+  themeVariables: {
+    '--w3m-color-mix': '#00DCFF',
+    '--w3m-color-mix-strength': 20
+  }
+})
 
 const HBTCLandingPage = () => {
+
+  //Wallet
+  const modal = useAppKit()
+  const state = useAppKitState()
+  const { themeMode, themeVariables, setThemeMode } = useAppKitTheme()
+  const events = useAppKitEvents()
+
+
   const [isNavOpen, setIsNavOpen] = useState(false);
     const navigate = useNavigate();
   // const { open } = useAppKit();
@@ -118,16 +155,19 @@ const HBTCLandingPage = () => {
               </button>
             </li> */}
             <li>
-              <button
+              {/* <button
       onClick={() => navigate("/user")}
       className="text-gray-600 hover:text-gray-800 block px-4 py-2 md:inline md:px-0"
     >
       DApp
-    </button>
+    </button> */}
+     
+      <w3m-network-button />
+      
             </li>
-            {/* <li>
-              <button onClick={() => open()}>Open Connect Modal</button>
-            </li> */}
+            <li>
+            <w3m-button />
+            </li>
           </ul>
         </div>
       </nav>
