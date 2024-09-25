@@ -166,7 +166,7 @@ const HBTCLandingPage = () => {
       
             </li>
             <li>
-            <w3m-button />  {/* Wallet Button */}
+            {/* <w3m-button /> */} {/* Wallet Button */}
             </li>
           </ul>
         </div>
