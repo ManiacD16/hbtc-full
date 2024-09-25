@@ -146,27 +146,27 @@ const HBTCLandingPage = () => {
                 Roadmap
               </button>
             </li>
-            {/* <li>
-              <button
-                onClick={() => scrollToSection("plan")}
-                className="text-gray-600 hover:text-gray-800 block px-4 py-2 md:inline md:px-0"
-              >
-                Plan
-              </button>
-            </li> */}
             <li>
-              {/* <button
-      onClick={() => navigate("/user")}
+              <button
+                 onClick={() => navigate("/register")}
+      className="text-gray-600 hover:text-gray-800 block px-4 py-2 md:inline md:px-0"
+              >
+                Register
+              </button>
+            </li>
+            <li>
+              <button
+      onClick={() => navigate("/login")}
       className="text-gray-600 hover:text-gray-800 block px-4 py-2 md:inline md:px-0"
     >
-      DApp
-    </button> */}
+      Login
+    </button>
      
-      <w3m-network-button />
+      {/* <w3m-network-button /> */}
       
             </li>
             <li>
-            <w3m-button />
+            {/* <w3m-button /> */}
             </li>
           </ul>
         </div>
