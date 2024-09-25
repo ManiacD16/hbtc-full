@@ -221,14 +221,14 @@ const EcommerceReferralPage = () => {
             <div className={`flex items-stretch`}>
               <div className="w-full bg-white dark:bg-gray-800 shadow-lg flex flex-col rounded-lg">
                 {renderRewardPanel("5% Weekly Global Business", "$10000", "20")}
-                <div className="flex justify-end">
+                {/* <div className="flex justify-end">
                   <button
                     className="bg-green-600 text-white py-1 px-4 rounded-2xl w-1/3 hover:bg-green-400 mr-2 mb-2 text-sm sm:text-base md:text-md"
                     onClick={() => handleWithdraw()}
                   >
                     Eligible
                   </button>
-                </div>
+                </div> */}
 
                 {/* <div className="flex justify-end">
                   <button
@@ -247,14 +247,14 @@ const EcommerceReferralPage = () => {
                   "$10000",
                   "20"
                 )}
-                <div className="flex justify-end">
+                {/* <div className="flex justify-end">
                   <button
                     className="bg-red-600 text-white py-1 px-4 rounded-2xl w-1/3 hover:bg-red-900 mr-2 mb-2 text-sm sm:text-base md:text-md"
                     onClick={() => handleWithdraw()}
                   >
                     Ineligible
                   </button>
-                </div>
+                </div> */}
                 {/* <div className="flex justify-end">
                   <button
                     className="bg-green-500 text-white py-1 px-4 border-black border-2 rounded-2xl w-1/3 hover:bg-green-600 mr-2"
