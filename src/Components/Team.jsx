@@ -65,7 +65,7 @@ export default function TeamComponent() {
                 }`}
                 onClick={() => setActiveTab("referral")}
               >
-                My Referral
+                My Directs
               </button>
               <button
                 className={`flex-1 py-3 px-4 text-center ${
@@ -75,7 +75,7 @@ export default function TeamComponent() {
                 }`}
                 onClick={() => setActiveTab("downline")}
               >
-                My Downline
+                Total Team
               </button>
             </div>
             <div className="p-4">
@@ -120,107 +120,3 @@ export default function TeamComponent() {
     </div>
   );
 }
-
-// import { useEffect, useState } from "react";
-// import { ethers } from "ethers";
-
-// // Replace with your smart contract ABI and address
-// const contractABI = [
-//   // Your contract ABI here
-// ];
-// const contractAddress = "0x00700486BE2bdD58e6BE1b06b5749f3B3EEabc13";
-
-// export default function TeamComponent() {
-//   const [activeTab, setActiveTab] = useState("referral");
-//   const [referralData, setReferralData] = useState([]);
-//   const [downlineData, setDownlineData] = useState([]);
-
-//   useEffect(() => {
-//     const fetchData = async () => {
-//       // Connect to Ethereum provider
-//       if (typeof window.ethereum !== "undefined") {
-//         const provider = new ethers.providers.Web3Provider(window.ethereum);
-//         const contract = new ethers.Contract(
-//           contractAddress,
-//           contractABI,
-//           provider
-//         );
-
-//         try {
-//           // Fetch referral data
-//           const referrals = await contract.getReferrals(); // Adjust based on your contract method
-//           setReferralData(referrals);
-
-//           // Fetch downline data
-//           const downlines = await contract.getDownlines(); // Adjust based on your contract method
-//           setDownlineData(downlines);
-//         } catch (error) {
-//           console.error("Error fetching data from contract:", error);
-//         }
-//       } else {
-//         console.log("Ethereum object doesn't exist!");
-//       }
-//     };
-
-//     fetchData();
-//   }, []);
-
-//   return (
-//     <div className="min-h-screen bg-gray-100 p-4">
-//       <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-md overflow-hidden">
-//         <div className="flex">
-//           <button
-//             className={`flex-1 py-3 px-4 text-center ${
-//               activeTab === "referral"
-//                 ? "bg-[#2a2a2a] text-white"
-//                 : "bg-gray-200 text-gray-700"
-//             }`}
-//             onClick={() => setActiveTab("referral")}
-//           >
-//             My Referral
-//           </button>
-//           <button
-//             className={`flex-1 py-3 px-4 text-center ${
-//               activeTab === "downline"
-//                 ? "bg-[#2a2a2a] text-white"
-//                 : "bg-gray-200 text-gray-700"
-//             }`}
-//             onClick={() => setActiveTab("downline")}
-//           >
-//             My Downline
-//           </button>
-//         </div>
-//         <div className="p-4">
-//           <table className="w-full">
-//             <thead>
-//               <tr className="border-b">
-//                 <th className="text-left py-2">User</th>
-//                 <th className="text-left py-2">
-//                   {activeTab === "referral" ? "Reg Date" : "Level"}
-//                 </th>
-//                 <th className="text-left py-2">Staking</th>
-//               </tr>
-//             </thead>
-//             <tbody>
-//               {activeTab === "referral"
-//                 ? referralData.map((item, index) => (
-//                     <tr key={index} className="border-b">
-//                       <td className="py-2">{item.user}</td>
-//                       <td className="py-2">{item.regDate}</td>
-//                       <td className="py-2">{item.staking}</td>
-//                     </tr>
-//                   ))
-//                 : downlineData.map((item, index) => (
-//                     <tr key={index} className="border-b">
-//                       <td className="py-2">{item.user}</td>
-//                       <td className="py-2">{item.level}</td>
-//                       <td className="py-2">{item.staking}</td>
-//                     </tr>
-//                   ))}
-//             </tbody>
-//           </table>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }

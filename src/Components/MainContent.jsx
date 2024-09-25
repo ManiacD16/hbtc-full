@@ -76,6 +76,7 @@ const EcommerceReferralPage = () => {
         <div className="hidden lg:block w-64 bg-white shadow-lg md:hidden">
           {/* Sidebar content goes here */}
           <Sidebar />
+          
         </div>
       </div>
 
@@ -299,6 +300,7 @@ const EcommerceReferralPage = () => {
               )}
             </div>
           </div>
+          
         </main>
       </div>
     </div>

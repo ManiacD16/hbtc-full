@@ -8,7 +8,9 @@ import Airdrop from "./Components/Airdrop";
 import Roadmap from "./Components/Roadmap";
 import MainContent from "./Components/MainContent"; // Main content for user panel
 import Team from "./Components/Team"; // Team component
-import Activity from "./Components/Activity"; // Activity component
+import Stake from "./Components/Stake"; // Activity component
+import Income from "./Components/Income";
+import Rewards from "./Components/Rewards";
 
 function App() {
   return (
@@ -28,15 +30,15 @@ function App() {
           } />
 
           {/* User Panel Routes */}
-          <Route path="/user" element={<MainContent />} />
+          <Route path="/user" element={<MainContent />}/>
             <Route path="/team" element={<Team />} />
-            <Route path="/activity" element={<Activity />} />
-            {/* Redirect to team by default, if /user is accessed */}
-            {/* <Route path="" element={<Navigate to="team" />} /> */}
+          <Route path="/stake" element={<Stake />} />
+          <Route path="/income" element={<Income />} />
+          <Route path="/rewards" element={<Rewards />} />
+            <Route path="" element={<Navigate to="/user/team" />} /> {/* Redirect to team by default */}
           
 
-          {/* Redirect any unknown paths to home */}
-          {/* <Route path="*" element={<Navigate to="/" />} /> */}
+          <Route path="*" element={<Navigate to="/" />} /> {/* Redirect to home for unknown paths */}
         </Routes>
       </div>
     </Router>
