@@ -4,10 +4,7 @@ import react from "@vitejs/plugin-react-swc";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  build: {
-    rollupOptions:   
- {
-      external: ['ethers5'],
-    },
+  server: {
+    port: 3000,
   },
 });
