@@ -11,6 +11,8 @@ import Team from "./Components/Team"; // Team component
 import Stake from "./Components/Stake"; // Activity component
 import Income from "./Components/Income";
 import Rewards from "./Components/Rewards";
+import Register from "./Components/Register"
+import Login from "./Components/Login";
 
 function App() {
   return (
@@ -35,6 +37,8 @@ function App() {
           <Route path="/stake" element={<Stake />} />
           <Route path="/income" element={<Income />} />
           <Route path="/rewards" element={<Rewards />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
             <Route path="" element={<Navigate to="/user/team" />} /> {/* Redirect to team by default */}
           
 
